@@ -1,0 +1,28 @@
+def add(a, b):
+    return a + b
+def sub(a, b):
+    return a - b
+def mul(a, b):
+    return a * b
+def div(a, b):
+    return a / b
+while True:
+    print("select operation")
+    print("1.addition")
+    print("2.substration")
+    print("3.multiplication")
+    print("4.division")
+    choice=input("enter your choice")
+    if choice in ('1','2','3','4'):
+        a=float(input("enter your first number"))
+        b=float(input("enter your second number"))
+        if choice == '1':
+            print("Result of addtion", add(a,b))
+        elif choice == '2':
+            print("Result of addtion", sub(a,b))     
+        elif choice == '3':
+            print("Result of addtion", mul(a,b))
+        elif choice == '4':
+            print("Result of addtion", div(a,b))
+        else:
+            print("invalid choice")
